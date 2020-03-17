@@ -1,0 +1,5 @@
+gfortran calcul_total_polarization.f90 -o calcul_total_polarization.x
+./calcul_total_polarization.x
+python3 compute_epsilon-error.py polarization_total.dat
+mkdir file
+mv data.inpt runtime.inpt dipoles.out pol* file 
